@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MercApp">
         <activity
+            android:name=".FireBaseActivity"
+            android:exported="false" />
+        <activity
             android:name=".AgregarCategoriaActivity"
             android:exported="false" />
         <activity
