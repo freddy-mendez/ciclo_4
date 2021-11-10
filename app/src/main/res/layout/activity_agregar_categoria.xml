@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarCategoriaActivity">
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="298dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Nombre Categoria"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtDescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="303dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Descripción de la Categoria"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/txtUrlImage"
+        app:layout_constraintEnd_toEndOf="@+id/txtNombre"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNombre"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <EditText
+        android:id="@+id/txtUrlImage"
+        android:layout_width="297dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="Url de la Categoria"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/txtDescripcion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:onClick="agregar"
+        android:text="Agregar"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="@+id/txtUrlImage"
+        app:layout_constraintTop_toBottomOf="@+id/txtUrlImage" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="16dp"
+        android:onClick="volver"
+        android:text="Volver"
+        app:layout_constraintEnd_toEndOf="@+id/txtUrlImage"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/txtUrlImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>
