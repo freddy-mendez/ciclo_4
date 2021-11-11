@@ -132,6 +132,11 @@ public class MenuActivity extends AppCompatActivity {
         llamada_recycler.launch(intent);
     }
 
+    public void openFirebase(View view) {
+        Intent intent = new Intent(getApplicationContext(), FireBaseActivity.class);
+        startActivity(intent);
+    }
+
 
     public void enviar(View view) {
         /*EditText txtEdad = findViewById(R.id.txtEdad);

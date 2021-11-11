@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "414678103781",
+    "project_id": "mercapp-e5a83",
+    "storage_bucket": "mercapp-e5a83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414678103781:android:121c2a0d081bd6fdc1060c",
+        "android_client_info": {
+          "package_name": "co.edu.unab.mercapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414678103781-fmuehm4f9vhm8k0ojs00u66s7567ka4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW1eLcFn93acLu-ltCFCnrdFUQVzxrdD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414678103781-fmuehm4f9vhm8k0ojs00u66s7567ka4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
