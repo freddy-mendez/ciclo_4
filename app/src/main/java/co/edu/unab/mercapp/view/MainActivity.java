@@ -1,22 +1,20 @@
-package co.edu.unab.mercapp;
+package co.edu.unab.mercapp.view;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import co.edu.unab.mercapp.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -49,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener eventoClick = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            if (view.getId()==R.id.btnSalir) {
+            if (view.getId()== R.id.btnSalir) {
                 MainActivity.super.finish();
             } else if (view.getId()==R.id.btnInicio) {
                 EditText user = findViewById(R.id.txtUsername);

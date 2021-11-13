@@ -1,6 +1,7 @@
 package co.edu.unab.mercapp.entity;
 
 public class Producto {
+    private String idDocumento;
     private String codigo;
     private String nombre;
     private int precio;
@@ -15,6 +16,14 @@ public class Producto {
         this.nombre = nombre;
         this.precio = precio;
         this.disponible = true;
+    }
+
+    public String getId() {
+        return idDocumento;
+    }
+
+    public void setId(String id) {
+        this.idDocumento=id;
     }
 
     public Producto(String codigo, String nombre, int precio, boolean disponible) {

@@ -1,10 +1,9 @@
-package co.edu.unab.mercapp;
+package co.edu.unab.mercapp.view.firebase;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -23,6 +22,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.HashMap;
 import java.util.Map;
 
+import co.edu.unab.mercapp.R;
 import co.edu.unab.mercapp.entity.Producto;
 
 public class FireBaseActivity extends AppCompatActivity {

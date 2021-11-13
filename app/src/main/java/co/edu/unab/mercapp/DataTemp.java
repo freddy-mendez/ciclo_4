@@ -9,7 +9,7 @@ public class DataTemp {
 
     public static final ArrayList<Categoria> CATEGORIAS_INTERES = new ArrayList<>();
 
-    static final void cargarCategorias() {
+    public static final void cargarCategorias() {
         CATEGORIAS.add(new Categoria("Aseo Personal",
                 "Elementos de aseo para el cuidad personal"));
         CATEGORIAS.add(new Categoria("Alimentos",

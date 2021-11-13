@@ -13,19 +13,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MercApp">
         <activity
-            android:name=".FireBaseActivity"
+            android:name=".view.firebase.EditarProductoActvity"
             android:exported="false" />
         <activity
-            android:name=".AgregarCategoriaActivity"
+            android:name=".view.firebase.GestionFirebaseActivity"
             android:exported="false" />
         <activity
-            android:name=".RecyclerActivity"
+            android:name=".view.firebase.FireBaseActivity"
             android:exported="false" />
         <activity
-            android:name=".MenuActivity"
+            android:name=".view.categoria.AgregarCategoriaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.categoria.RecyclerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.MenuActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

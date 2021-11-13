@@ -1,4 +1,4 @@
-package co.edu.unab.mercapp;
+package co.edu.unab.mercapp.view.categoria;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import co.edu.unab.mercapp.DataTemp;
+import co.edu.unab.mercapp.R;
 import co.edu.unab.mercapp.entity.Categoria;
 
 public class AgregarCategoriaActivity extends AppCompatActivity {

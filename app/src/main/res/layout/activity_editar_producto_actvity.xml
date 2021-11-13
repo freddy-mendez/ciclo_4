@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.firebase.EditarProductoActvity">
+
+    <EditText
+        android:id="@+id/txt_cod_pro"
+        android:layout_width="302dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="54dp"
+        android:ems="10"
+        android:hint="Codigo Producto"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_nom_pro"
+        android:layout_width="292dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Nombre Producto"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_pre_pro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txt_cod_pro"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cod_pro" />
+
+    <EditText
+        android:id="@+id/txt_pre_pro"
+        android:layout_width="290dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="66dp"
+        android:ems="10"
+        android:hint="Precio Producto"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txt_nom_pro"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nom_pro" />
+
+    <CheckBox
+        android:id="@+id/txt_dis_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="258dp"
+        android:text="Disponible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txt_pre_pro"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pre_pro" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="269dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="72dp"
+        android:onClick="guardar"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_dis_pro" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="268dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="7dp"
+        android:onClick="eliminar"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="@+id/button12"
+        app:layout_constraintStart_toStartOf="@+id/button12"
+        app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:onClick="volver"
+        android:text="Volver"
+        app:layout_constraintEnd_toEndOf="@+id/button13"
+        app:layout_constraintStart_toStartOf="@+id/button13"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

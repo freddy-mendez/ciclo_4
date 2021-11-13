@@ -1,4 +1,4 @@
-package co.edu.unab.mercapp;
+package co.edu.unab.mercapp.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +13,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
+import co.edu.unab.mercapp.R;
 import co.edu.unab.mercapp.entity.Categoria;
 
 public class CategoriaRecyclerAdapter

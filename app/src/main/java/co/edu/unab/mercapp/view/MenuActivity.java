@@ -1,4 +1,4 @@
-package co.edu.unab.mercapp;
+package co.edu.unab.mercapp.view;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -12,18 +12,21 @@ import android.os.Bundle;
 import android.util.Log;
 import android.util.SparseBooleanArray;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
+import co.edu.unab.mercapp.view.categoria.AgregarCategoriaActivity;
+import co.edu.unab.mercapp.DataTemp;
+import co.edu.unab.mercapp.view.firebase.FireBaseActivity;
+import co.edu.unab.mercapp.R;
+import co.edu.unab.mercapp.view.categoria.RecyclerActivity;
+import co.edu.unab.mercapp.adapter.CategoriaAdapter;
 import co.edu.unab.mercapp.entity.Categoria;
+import co.edu.unab.mercapp.view.firebase.GestionFirebaseActivity;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -133,7 +136,8 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void openFirebase(View view) {
-        Intent intent = new Intent(getApplicationContext(), FireBaseActivity.class);
+        //Intent intent = new Intent(getApplicationContext(), FireBaseActivity.class);
+        Intent intent = new Intent(getApplicationContext(), GestionFirebaseActivity.class);
         startActivity(intent);
     }
 

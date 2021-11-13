@@ -1,4 +1,4 @@
-package co.edu.unab.mercapp;
+package co.edu.unab.mercapp.view.categoria;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,9 +7,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
 
+import co.edu.unab.mercapp.DataTemp;
+import co.edu.unab.mercapp.R;
+import co.edu.unab.mercapp.adapter.CategoriaRecyclerAdapter;
 import co.edu.unab.mercapp.entity.Categoria;
 
 public class RecyclerActivity extends AppCompatActivity {
