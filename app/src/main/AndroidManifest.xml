@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MercApp">
         <activity
+            android:name=".view.firebase.CrearProdutoActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.firebase.EditarProductoActvity"
             android:exported="false" />
         <activity

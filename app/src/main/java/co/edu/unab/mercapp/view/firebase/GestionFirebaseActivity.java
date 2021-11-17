@@ -51,7 +51,22 @@ public class GestionFirebaseActivity extends AppCompatActivity {
         });
     }
 
+    public void crear(View view) {
+        Intent intent = new Intent(GestionFirebaseActivity.this, CrearProdutoActivity.class);
+        crear.launch(intent);
+    }
+
     ActivityResultLauncher<Intent> editar = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    if (result.getResultCode()==RESULT_OK) {
+                        getAllData();
+                    }
+                }
+            });
+
+    ActivityResultLauncher<Intent> crear = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
                 @Override
                 public void onActivityResult(ActivityResult result) {
